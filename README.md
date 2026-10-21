@@ -26,6 +26,13 @@ Dann http://localhost:4321 öffnen. Name der App ändern: `APP_NAME` in `app.js`
 - `sw.js`: Offline-Cache (bei Änderungen `CACHE`-Version hochzählen)
 - `manifest.webmanifest`, `icons/`: Name und Icon auf dem Home-Bildschirm
 
+## Online
+- Adresse: https://lucislitonai.github.io/macher/ (GitHub Pages, Repo LucIsLitOnAi/macher, öffentlich; Rezepte liegen NICHT im Repo, nur auf den Handys)
+- Update veröffentlichen: `CACHE` in `sw.js` hochzählen, dann `./deploy.sh` (lädt über die GitHub-API hoch, kein git nötig).
+
+## REA (Reverse Engineering)
+- Nur für diesen Ordner eingetragen (local scope in ~/.claude.json, Backup: ~/.claude.json.bak-vor-rea).
+- Installiert unter ~/.local/share/rea (rea-agents 6.7.0). Entfernen: `claude mcp remove --scope local rea` in diesem Ordner.
+
 ## Offen
-- Online stellen (z. B. GitHub Pages oder Cloudflare Pages), damit die Geschwister sie installieren können.
 - Später optional: echte iPhone-App mit Capacitor + Xcode, gemeinsame Rezepte per Sync, Rezepte untereinander verlinken.
